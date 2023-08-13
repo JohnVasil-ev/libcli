@@ -2,13 +2,12 @@
 #define STRING_PARSER_H
 
 #include <string>
-#include <cstring>
 #include <vector>
 
 namespace cli {
 namespace utils {
 
-std::vector<std::string> split_by(const std::string&, const std::string&&);
+std::vector<std::string> split_by_char(const std::string&, const char&&);
 
 } // utils
 } // cli

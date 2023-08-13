@@ -3,13 +3,13 @@
 namespace cli {
 namespace utils {
 
-std::vector<std::string> split_by(const std::string& str, const std::string&& divider)
+std::vector<std::string> split_by_char(const std::string& str, const char&& divider)
 {
   std::vector<std::string> vector;
   std::string tmp_str;
 
-  for (const char c : str)
-  	if (std::strcmp(c, divider.c_str()) == 0)
+  for (const char& c : str)
+  	if (c == divider)
   	{
   		vector.push_back(tmp_str);
   		tmp_str.clear();
