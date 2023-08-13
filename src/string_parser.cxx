@@ -8,7 +8,7 @@ std::vector<std::string> split_by(const std::string& str, const std::string&& di
   std::vector<std::string> vector;
   std::string tmp_str;
 
-  for (const char& c : str)
+  for (const char c : str)
   	if (std::strcmp(c, divider.c_str()) == 0)
   	{
   		vector.push_back(tmp_str);
