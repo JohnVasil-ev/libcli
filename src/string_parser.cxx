@@ -3,7 +3,7 @@
 namespace cli {
 namespace utils {
 
-std::vector<std::string> split_by(std::string&& str, std::string&& divider)
+std::vector<std::string> split_by(const std::string& str, const std::string&& divider)
 {
   std::vector<std::string> vector;
   std::string tmp_str;

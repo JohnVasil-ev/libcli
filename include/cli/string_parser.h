@@ -8,7 +8,7 @@
 namespace cli {
 namespace utils {
 
-std::vector<std::string> split_by(std::string&&, std::string&&);
+std::vector<std::string> split_by(const std::string&, const std::string&&);
 
 } // utils
 } // cli
