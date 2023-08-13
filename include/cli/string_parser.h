@@ -1,6 +1,7 @@
 #ifndef STRING_PARSER_H
 #define STRING_PARSER_H
 
+#include <string>
 #include <vector>
 
 namespace cli {
