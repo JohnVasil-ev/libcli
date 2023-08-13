@@ -9,14 +9,14 @@ std::vector<std::string> split_by_char(const std::string& str, const char&& divi
   std::string tmp_str;
 
   for (const char& c : str)
-  	if (c == divider)
+  	if (c != divider && c != ' ')
   	{
-  		vector.push_back(tmp_str);
-  		tmp_str.clear();
+      tmp_str.push_back(c);
   	}
-  	else
+  	else if (c == divider)
   	{
-  		tmp_str.push_back(c);
+      vector.push_back(tmp_str);
+      tmp_str.clear();
   	}
 
   if (!tmp_str.empty())
