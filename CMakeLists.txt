@@ -17,6 +17,6 @@ target_sources(cli
 )
 
 target_include_directories(cli
-	PRIVATE
+	PUBLIC
 	  ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
