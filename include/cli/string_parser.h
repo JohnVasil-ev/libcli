@@ -2,6 +2,7 @@
 #define STRING_PARSER_H
 
 #include <string>
+#include <cstring>
 #include <vector>
 
 namespace cli {
