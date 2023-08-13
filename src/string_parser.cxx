@@ -19,6 +19,9 @@ std::vector<std::string> split_by_char(const std::string& str, const char&& divi
   		tmp_str.push_back(c);
   	}
 
+  if (!tmp_str.empty())
+    vector.push_back(tmp_str);
+
   return vector;
 }
 
