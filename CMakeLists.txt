@@ -13,7 +13,7 @@ add_library(cli)
 
 target_sources(cli
 	PRIVATE
-	  src/string_parser.h
+	  src/string_parser.cxx
 )
 
 target_include_directories(cli
