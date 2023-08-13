@@ -12,11 +12,11 @@ project(cli
 add_library(cli)
 
 target_sources(cli
-	PUBLIC
+	PRIVATE
 	  src/string_parser.cxx
 )
 
 target_include_directories(cli
-	PUBLIC
+	PRIVATE
 	  ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
